@@ -1,0 +1,38 @@
+* {
+    color: white
+}
+body {
+    background-color: rgb(51, 51, 51);
+}
+.title {
+    text-align: center
+}
+.balance {
+    text-align: center;
+}
+
+.status {
+    text-align: center;
+}
+.dep {
+    text-align: center;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.deptext {
+    background-color: grey;
+    color: white;
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 5%;
+}
+.btn {
+    background-color: rgb(172, 172, 172);
+    color: white;
+    padding: 7px 7px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
