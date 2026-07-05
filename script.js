@@ -8,7 +8,7 @@ balancetext.textContent = balance;
 btn.addEventListener('click', function() {
     if (input.value == "") {
         statust = "введи хоть что то"
-    } else if (isNaN(input.value) || Number(input.value) <= 0) {
+    } else if (isNaN(input.value) || Number(input.value) < 0) {
         statust = "нет ну ты мудак блять или кто"
     } else if (Number(input.value) > balance) {
         statust = "а нахуя ты блять пытаешься депнуть больше чем у тебя на балике есть долбоеб"
@@ -20,7 +20,11 @@ btn.addEventListener('click', function() {
             statust = "это победа"
         } else {
             balance = balance-Number(input.value)
-            statust = "проигрышш((( анлакич"
+            if (balance > 0) {
+                statust = "проигрышш((( анлакич"
+            } else {
+                statust = "ТЫ ВЪЕБАЛ ВСЕ СВОИ ДЕНЬГИ ОБНОВНИ СТРАНИЦУ"
+            }
         }
     }
     input.value = "";
